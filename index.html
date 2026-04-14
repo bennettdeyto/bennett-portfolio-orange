@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bennett Deyto</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#shipyard">PRODUCT</a>
+      <a href="#shipyard">ABOUT</a>
+      <a href="#below-deck">CONTACT</a>
+      <a href="#hero" class="abandon-link">ABANDON SHIP!</a>
+    </nav>
+    <p class="nav-status-message" aria-live="polite">work in progress!</p>
+
+    <main>
+      <section id="hero" class="hero-section">
+        <div class="hero-content">
+          <div class="hero-logo-wrap">
+            <img src="./bennett-logo.png" alt="Bennett logo" class="hero-logo" />
+            <span class="logo-hover-text">. "kaboom"</span>
+          </div>
+          <a href="#shipyard" class="shipyard-anchor">
+            <span class="shipyard-label">SEE THE SHIPYARD</span>
+            <img src="./anchor.svg" alt="" class="anchor-icon" aria-hidden="true" />
+          </a>
+        </div>
+      </section>
+
+      <section id="shipyard" class="shipyard-section">
+        <div class="shipyard-header">
+          <p class="established">EST. 2026</p>
+          <h1>THE SHIPYARD</h1>
+          <p class="caption">a pm's dock of shipped things</p>
+        </div>
+
+        <div class="water-area" aria-hidden="true">
+          <svg class="wave wave-back" viewBox="0 0 1440 220" preserveAspectRatio="none">
+            <path
+              d="M0,126 C220,94 420,94 640,126 C860,158 1060,158 1280,126 C1360,114 1400,114 1440,120 L1440,220 L0,220 Z"
+            ></path>
+          </svg>
+          <svg class="wave wave-front" viewBox="0 0 1440 220" preserveAspectRatio="none">
+            <path
+              d="M0,132 C230,106 430,106 650,132 C870,158 1070,158 1290,132 C1368,122 1410,120 1440,124 L1440,220 L0,220 Z"
+            ></path>
+          </svg>
+        </div>
+      </section>
+    </main>
+
+    <footer id="below-deck" class="below-deck">
+      <p class="below-deck-label">BELOW DECK</p>
+      <div class="below-deck-columns">
+        <div class="footer-logo-wrap">
+          <img src="./bennett-logo.png" alt="Bennett logo" class="footer-logo" />
+        </div>
+        <div class="contact-wrap">
+          <h2>Let's Get in Touch</h2>
+          <div class="contact-row">
+            <span>Email</span>
+            <a href="mailto:bennett@deyto.com">bennett@deyto.com</a>
+          </div>
+          <div class="contact-row">
+            <span>LinkedIn</span>
+            <a href="https://www.linkedin.com/in/bennettdeyto/" target="_blank" rel="noopener noreferrer">bennettdeyto</a>
+          </div>
+          <div class="contact-row">
+            <span>Instagram</span>
+            <a href="https://www.instagram.com/bennettdeyto/" target="_blank" rel="noopener noreferrer">bennettdeyto</a>
+          </div>
+        </div>
+      </div>
+      <p class="footer-credit">made with love (Next.js, Cursor, &amp; Claude Code)</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
