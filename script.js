@@ -6,7 +6,6 @@ const abandonLink = document.querySelector('.abandon-link');
 const heroLogo = document.querySelector('.hero-logo');
 const waterArea = document.querySelector('.water-area');
 const heroContent = document.querySelector('.hero-content');
-const heroLogoWrap = document.querySelector('.hero-logo-wrap');
 const heroSection = document.querySelector('#hero');
 const shipyardSection = document.querySelector('#shipyard');
 const navLinks = document.querySelectorAll('.main-nav a');
@@ -82,9 +81,6 @@ if (heroLogo) {
   });
 
   heroLogo.addEventListener('click', () => {
-    if (heroLogoWrap) {
-      heroLogoWrap.classList.add('clicked');
-    }
     heroLogo.classList.remove('bursting');
     heroLogo.classList.add('hover-cooldown');
     window.clearTimeout(hoverCooldownTimeout);

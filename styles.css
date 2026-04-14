@@ -190,30 +190,6 @@ a {
   align-items: center;
 }
 
-.logo-hover-text {
-  margin-top: -8px;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  color: var(--cream);
-  opacity: 0;
-  transform: translateY(-14px) scale(0.85);
-  transition: opacity 0.2s ease, transform 0.2s ease;
-  pointer-events: none;
-  z-index: -1;
-}
-
-.hero-logo-wrap:hover .logo-hover-text {
-  opacity: 1;
-  transform: translateY(-4px) scale(1);
-  animation: kaboom-shake 0.3s linear infinite;
-}
-
-.hero-logo-wrap.clicked .logo-hover-text {
-  opacity: 0;
-  animation: none;
-}
-
 .shipyard-anchor {
   margin-top: 80px;
   display: inline-flex;
@@ -534,24 +510,6 @@ a {
   100% {
     transform: translateX(-50%) translateY(-16px) scale(1.2);
     opacity: 0;
-  }
-}
-
-@keyframes kaboom-shake {
-  0% {
-    transform: translateY(-4px) translateX(0) rotate(0deg);
-  }
-  25% {
-    transform: translateY(-4px) translateX(-1px) rotate(-1deg);
-  }
-  50% {
-    transform: translateY(-4px) translateX(1px) rotate(1deg);
-  }
-  75% {
-    transform: translateY(-4px) translateX(-1px) rotate(-0.6deg);
-  }
-  100% {
-    transform: translateY(-4px) translateX(0) rotate(0deg);
   }
 }
 
